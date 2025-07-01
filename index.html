@@ -5,104 +5,118 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ashish Kumar | Marriage Biodata</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background: linear-gradient(to right, #edf2f7, #e2e8f0);
+    }
+    .section-card {
+      @apply bg-white shadow-xl p-6 rounded-lg border-l-4 border-blue-400;
+    }
+    .highlight {
+      @apply text-blue-700 font-semibold;
+    }
+    .badge {
+      @apply inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full;
+    }
+  </style>
 </head>
-<body class="bg-gray-100 text-gray-800 font-sans">
-  <header class="bg-white shadow py-6">
+<body class="text-gray-800 font-sans">
+  <header class="bg-gradient-to-r from-blue-600 to-blue-400 py-6 shadow-lg">
     <div class="container mx-auto px-4 text-center">
-      <h1 class="text-4xl font-bold text-blue-700">Ashish Kumar</h1>
-      <p class="text-lg text-gray-500">🌟 Professional Marriage Biodata</p>
+      <h1 class="text-4xl font-bold text-white">Ashish Kumar</h1>
+      <p class="text-lg text-blue-100">🌟 Professional Marriage Biodata</p>
     </div>
   </header>
 
-  <main class="container mx-auto px-4 py-8">
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold text-blue-700 mb-2">👤 Personal Profile</h2>
-      <ul class="bg-white shadow p-4 rounded">
-        <li><strong>Full Name:</strong> Ashish Kumar</li>
-        <li><strong>Date of Birth:</strong> 26th October 1998</li>
-        <li><strong>Height:</strong> 168 cm</li>
-        <li><strong>Marital Status:</strong> Unmarried</li>
-        <li><strong>Religion / Caste:</strong> Hindu / Kachhi</li>
+  <main class="container mx-auto px-4 py-10 space-y-12">
+
+    <section class="section-card">
+      <h2 class="text-2xl highlight mb-4">👤 Personal Profile</h2>
+      <ul class="space-y-2">
+        <li><span class="highlight">Full Name:</span> Ashish Kumar</li>
+        <li><span class="highlight">Date of Birth:</span> 26th October 1998</li>
+        <li><span class="highlight">Height:</span> 168 cm</li>
+        <li><span class="highlight">Marital Status:</span> Unmarried</li>
+        <li><span class="highlight">Religion / Caste:</span> Hindu / Kachhi</li>
       </ul>
     </section>
 
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold text-blue-700 mb-2">👪 Family Details</h2>
-      <ul class="bg-white shadow p-4 rounded">
-        <li><strong>Father:</strong> Mr. Ravindra Kumar</li>
-        <li><strong>Mother:</strong> Mrs. Suneeta Devi</li>
-        <li><strong>Brother:</strong> Shubham Kumar</li>
-        <li><strong>Sister:</strong> Jyoti Devi</li>
-        <li><strong>Brother-in-law:</strong> Saloni Kushwaha</li>
+    <section class="section-card">
+      <h2 class="text-2xl highlight mb-4">👪 Family Details</h2>
+      <ul class="space-y-2">
+        <li><span class="highlight">Father:</span> Mr. Ravindra Kumar</li>
+        <li><span class="highlight">Mother:</span> Mrs. Suneeta Devi</li>
+        <li><span class="highlight">Brother:</span> Shubham Kumar</li>
+        <li><span class="highlight">Sister:</span> Jyoti Devi</li>
+        <li><span class="highlight">Sister-in-law:</span> Saloni Kushwaha</li>
       </ul>
     </section>
 
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold text-blue-700 mb-2">🎓 Educational Qualifications</h2>
+    <section class="section-card">
+      <h2 class="text-2xl highlight mb-4">🎓 Educational Qualifications</h2>
       <div class="overflow-x-auto">
-        <table class="min-w-full bg-white shadow rounded">
+        <table class="min-w-full table-auto border rounded-lg overflow-hidden">
           <thead class="bg-blue-100">
             <tr>
-              <th class="py-2 px-4 text-left">Qualification</th>
-              <th class="py-2 px-4 text-left">Institution / Board</th>
-              <th class="py-2 px-4 text-left">Percentage</th>
+              <th class="px-4 py-2 text-left">📘 Qualification</th>
+              <th class="px-4 py-2 text-left">🏫 Institution / Board</th>
+              <th class="px-4 py-2 text-left">📊 Percentage</th>
             </tr>
           </thead>
-          <tbody>
-            <tr><td class="py-2 px-4">MBA</td><td class="py-2 px-4">Shubharti University, Meerut</td><td class="py-2 px-4">68%</td></tr>
-            <tr><td class="py-2 px-4">B.Tech</td><td class="py-2 px-4">CSA Kanpur</td><td class="py-2 px-4">78%</td></tr>
-            <tr><td class="py-2 px-4">12th</td><td class="py-2 px-4">UP Board</td><td class="py-2 px-4">90%</td></tr>
-            <tr><td class="py-2 px-4">10th</td><td class="py-2 px-4">UP Board</td><td class="py-2 px-4">88%</td></tr>
+          <tbody class="bg-white">
+            <tr><td class="px-4 py-2">MBA</td><td class="px-4 py-2">Shubharti University, Meerut</td><td class="px-4 py-2">68%</td></tr>
+            <tr class="bg-gray-50"><td class="px-4 py-2">B.Tech</td><td class="px-4 py-2">CSA Kanpur</td><td class="px-4 py-2">78%</td></tr>
+            <tr><td class="px-4 py-2">12th</td><td class="px-4 py-2">UP Board</td><td class="px-4 py-2">90%</td></tr>
+            <tr class="bg-gray-50"><td class="px-4 py-2">10th</td><td class="px-4 py-2">UP Board</td><td class="px-4 py-2">88%</td></tr>
           </tbody>
         </table>
       </div>
     </section>
 
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold text-blue-700 mb-2">💼 Professional Background</h2>
-      <ul class="bg-white shadow p-4 rounded">
-        <li><strong>Job Title:</strong> Software Engineer</li>
-        <li><strong>Company:</strong> Infosys Limited</li>
-        <li><strong>Industry:</strong> IT / Software Services</li>
-        <li><strong>Location:</strong> New Delhi</li>
-        <li><strong>Experience:</strong> 3+ years (Full-stack & Backend)</li>
+    <section class="section-card">
+      <h2 class="text-2xl highlight mb-4">💼 Professional Background</h2>
+      <ul class="space-y-2">
+        <li><span class="highlight">Job Title:</span> Software Engineer</li>
+        <li><span class="highlight">Company:</span> Infosys Limited</li>
+        <li><span class="highlight">Industry:</span> IT / Software Services</li>
+        <li><span class="highlight">Location:</span> New Delhi</li>
+        <li><span class="highlight">Experience:</span> 3+ years (Full-stack & Backend)</li>
       </ul>
     </section>
 
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold text-blue-700 mb-2">📌 Permanent Address</h2>
-      <p class="bg-white shadow p-4 rounded">🏠 Fatehpur, Uttar Pradesh, India</p>
+    <section class="section-card">
+      <h2 class="text-2xl highlight mb-4">📌 Permanent Address</h2>
+      <p>🏠 Fatehpur, Uttar Pradesh, India</p>
     </section>
 
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold text-blue-700 mb-2">📞 Contact Information</h2>
-      <ul class="bg-white shadow p-4 rounded">
-        <li><strong>Mobile:</strong> +91 75248 62120</li>
-        <li><strong>Email:</strong> <em>(Please insert your email)</em></li>
+    <section class="section-card">
+      <h2 class="text-2xl highlight mb-4">📞 Contact Information</h2>
+      <ul class="space-y-2">
+        <li><span class="highlight">Mobile:</span> +91 75248 62120</li>
+        <li><span class="highlight">Email:</span> <em>(Please insert your email)</em></li>
       </ul>
     </section>
 
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold text-blue-700 mb-2">🌐 Languages Known</h2>
-      <ul class="bg-white shadow p-4 rounded">
-        <li>🗣️ Hindi (Fluent)</li>
-        <li>🗣️ English (Professional Proficiency)</li>
-      </ul>
+    <section class="section-card">
+      <h2 class="text-2xl highlight mb-4">🌐 Languages Known</h2>
+      <div class="flex flex-wrap gap-2">
+        <span class="badge">Hindi (Fluent)</span>
+        <span class="badge">English (Professional)</span>
+      </div>
     </section>
 
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold text-blue-700 mb-2">🎯 Hobbies & Interests</h2>
-      <ul class="bg-white shadow p-4 rounded">
+    <section class="section-card">
+      <h2 class="text-2xl highlight mb-4">🎯 Hobbies & Interests</h2>
+      <ul class="list-disc pl-5">
         <li>🏏 Playing Cricket</li>
         <li>🎵 Listening to Music</li>
         <li>💻 Exploring New Technologies</li>
       </ul>
     </section>
-
-    <footer class="text-center text-sm text-gray-500 py-8">
-      ✨ A modern biodata crafted with clarity and style.<br />
-      &copy; 2025 Ashish Kumar
-    </footer>
   </main>
+
+  <footer class="text-center text-sm text-gray-500 py-8 bg-blue-50">
+    ✨ A modern biodata crafted with clarity and style. &copy; 2025 Ashish Kumar
+  </footer>
 </body>
 </html>
