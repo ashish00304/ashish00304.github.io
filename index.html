@@ -1,138 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ashish Kumar | Marriage Biodata</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
-  <style>
-    body {
-      background: linear-gradient(to bottom right, #f0f4f8, #dbeafe);
-    }
-    .section-card {
-      @apply bg-white shadow-xl p-8 rounded-3xl border-l-8 border-blue-500 transition-all duration-300 hover:shadow-2xl hover:scale-[1.01];
-    }
-    .highlight {
-      @apply text-blue-800 font-semibold;
-    }
-    .badge {
-      @apply inline-block bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full font-medium shadow-sm;
-    }
-    header h1 {
-      @apply text-5xl font-extrabold text-white drop-shadow-xl;
-    }
-    header p {
-      @apply text-xl italic text-blue-200 mt-2;
-    }
-    table th, table td {
-      @apply border-t border-b border-gray-200 px-4 py-2 text-left;
-    }
-    table th {
-      @apply bg-blue-200 text-blue-900;
-    }
-    footer {
-      background: linear-gradient(to right, #dbeafe, #c7d2fe);
-    }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Your Name | Backend Engineer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f172a, #020617);
+  color: #e2e8f0;
+  scroll-behavior: smooth;
+}
+
+/* NAVBAR */
+nav {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 15px;
+  background: rgba(2,6,23,0.7);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+
+nav a {
+  color: #38bdf8;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 50px;
+}
+
+.typing {
+  color: #38bdf8;
+  font-size: 22px;
+  margin-top: 10px;
+}
+
+/* SECTION */
+section {
+  padding: 80px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+h2 {
+  margin-bottom: 30px;
+  font-size: 32px;
+}
+
+/* CARD */
+.card {
+  background: rgba(30,41,59,0.5);
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  backdrop-filter: blur(12px);
+  transition: 0.4s;
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card:hover {
+  transform: translateY(-5px) scale(1.02);
+}
+
+/* SKILLS */
+.skills span {
+  display: inline-block;
+  background: #1e293b;
+  padding: 8px 12px;
+  margin: 5px;
+  border-radius: 8px;
+}
+
+/* PROJECT GRID */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 20px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #64748b;
+}
+
+</style>
 </head>
-<body class="text-gray-800 font-sans antialiased">
- <header class="bg-gradient-to-r from-blue-500 to-blue-300 py-4 shadow-sm">
-  <div class="container mx-auto px-2 text-center">
-    <h1 class="text-5xl font-bold text-blue-100 leading-tight">Ashish Kumar</h1>
-    <p class="text-xl italic text-blue-100 mt-1">🌟 Marriage Biodata</p>
+
+<body>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<div class="hero">
+  <h1>YOUR NAME</h1>
+  <div class="typing" id="typing"></div>
+</div>
+
+<section id="about">
+  <h2>About Me</h2>
+  <div class="card">
+    Backend Engineer working on scalable systems using Golang, AWS, and event-driven architecture.
   </div>
-</header>
+</section>
 
-  <main class="container mx-auto px-4 py-14 space-y-14">
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills card">
+    <span>Golang</span>
+    <span>REST API</span>
+    <span>Microservices</span>
+    <span>AWS</span>
+    <span>SQS</span>
+    <span>SNS</span>
+    <span>Lambda</span>
+    <span>IAM</span>
+    <span>CloudFormation</span>
+  </div>
+</section>
 
-    <section class="section-card">
-      <h2 class="text-3xl highlight mb-6 border-b pb-2">👤 Personal Profile</h2>
-      <ul class="space-y-2 text-lg">
-        <li><span class="highlight">Full Name:</span> Ashish Kumar</li>
-        <li><span class="highlight">Date of Birth:</span> 26th October 1998</li>
-        <li><span class="highlight">Height:</span> 168 cm</li>
-        <li><span class="highlight">Marital Status:</span> Unmarried</li>
-        <li><span class="highlight">Religion / Caste:</span> Hindu / Kachhi</li>
-      </ul>
-    </section>
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects">
+    <div class="card">
+      <h3>Building X User API</h3>
+      <p>High-performance REST APIs in Golang.</p>
+    </div>
 
-    <section class="section-card">
-      <h2 class="text-3xl highlight mb-6 border-b pb-2">👪 Family Details</h2>
-      <ul class="space-y-2 text-lg">
-        <li><span class="highlight">Father:</span> Mr. Ravindra Kumar</li>
-        <li><span class="highlight">Mother:</span> Mrs. Suneeta Devi</li>
-        <li><span class="highlight">Brother:</span> Shubham Kumar</li>
-        <li><span class="highlight">Sister:</span> Jyoti Devi</li>
-        <li><span class="highlight">Sister-in-law:</span> Saloni Kushwaha</li>
-      </ul>
-    </section>
+    <div class="card">
+      <h3>Event-Driven Broker</h3>
+      <p>SQS + SNS + Lambda based system.</p>
+    </div>
+  </div>
+</section>
 
-    <section class="section-card">
-      <h2 class="text-3xl highlight mb-6 border-b pb-2">🎓 Educational Qualifications</h2>
-      <div class="overflow-x-auto">
-        <table class="min-w-full table-auto rounded-xl overflow-hidden bg-white">
-          <thead>
-            <tr>
-              <th>📘 Qualification</th>
-              <th>🏫 Institution / Board</th>
-              <th>📊 Percentage</th>
-            </tr>
-          </thead>
-          <tbody class="text-gray-800">
-            <tr><td>Master of Business Administration</td><td>Shubharti University, Meerut</td><td>68%</td></tr>
-            <tr class="bg-gray-50"><td>Bachelor of Technology.</td><td>CSA Kanpur</td><td>78%</td></tr>
-            <tr><td>Higher Secondary</td><td>UP Board</td><td>90%</td></tr>
-            <tr class="bg-gray-50"><td>High School</td><td>UP Board</td><td>88%</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="card">
+    <p>Email: your@email.com</p>
+    <p>GitHub: github.com/yourusername</p>
+    <p>LinkedIn: linkedin.com/in/yourprofile</p>
+  </div>
+</section>
 
-    <section class="section-card">
-      <h2 class="text-3xl highlight mb-6 border-b pb-2">💼 Professional Background</h2>
-      <ul class="space-y-2 text-lg">
-        <li><span class="highlight">Job Title:</span> Software Engineer</li>
-        <li><span class="highlight">Company:</span> Infosys Limited</li>
-        <li><span class="highlight">Industry:</span> IT / Software Services</li>
-        <li><span class="highlight">Location:</span> New Delhi</li>
-        <li><span class="highlight">Experience:</span> 3+ years (Full-stack & Backend)</li>
-      </ul>
-    </section>
+<footer>
+  © 2026 Your Name
+</footer>
 
-    <section class="section-card">
-      <h2 class="text-3xl highlight mb-6 border-b pb-2">📌 Permanent Address</h2>
-      <p class="pl-1 text-lg">🏠 Fatehpur, Uttar Pradesh, India</p>
-    </section>
+<script>
+/* Typing Effect */
+const roles = ["Backend Engineer", "Golang Developer", "AWS Specialist"];
+let i = 0, j = 0, current = "", isDeleting = false;
 
-    <section class="section-card">
-      <h2 class="text-3xl highlight mb-6 border-b pb-2">📞 Contact Information</h2>
-      <ul class="space-y-2 text-lg">
-        <li><span class="highlight">Mobile:</span> +91 75248 62120</li>
-        <li><span class="highlight">Email:</span> <em>Ashish00303@gmail.com</em></li>
-      </ul>
-    </section>
+function type() {
+  current = roles[i];
+  
+  if (isDeleting) {
+    document.getElementById("typing").textContent = current.substring(0, j--);
+  } else {
+    document.getElementById("typing").textContent = current.substring(0, j++);
+  }
 
-    <section class="section-card">
-      <h2 class="text-3xl highlight mb-6 border-b pb-2">🌐 Languages Known</h2>
-      <div class="flex flex-wrap gap-3 text-lg">
-        <span class="badge">Hindi (Fluent)</span>
-        <span class="badge">English (Professional)</span>
-      </div>
-    </section>
+  if (!isDeleting && j === current.length) {
+    isDeleting = true;
+    setTimeout(type, 1000);
+    return;
+  }
 
-    <section class="section-card">
-      <h2 class="text-3xl highlight mb-6 border-b pb-2">🎯 Hobbies & Interests</h2>
-      <ul class="list-disc pl-6 text-lg">
-        <li>🏏 Playing Cricket</li>
-        <li>🎵 Listening to Music</li>
-        <li>💻 Exploring New Technologies</li>
-      </ul>
-    </section>
-  </main>
+  if (isDeleting && j === 0) {
+    isDeleting = false;
+    i = (i + 1) % roles.length;
+  }
 
-  <footer class="text-center text-sm text-gray-700 py-8">
-    ✨ A professionally styled biodata built with Tailwind CSS. <br />
-    &copy; 2025 Ashish Kumar
-  </footer>
+  setTimeout(type, isDeleting ? 50 : 100);
+}
+
+type();
+
+/* Scroll Animation */
+const cards = document.querySelectorAll('.card');
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    }
+  });
+});
+
+cards.forEach(card => observer.observe(card));
+
+</script>
+
 </body>
 </html>
